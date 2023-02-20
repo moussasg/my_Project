@@ -14,12 +14,14 @@ export const Mesproduits = [
         {
           imgp: huita,
           nom: "8a" ,
-          caractér: "Ram : 2gb "
+          caractér: "caractéristique: Ram : 2gb " ,
+          prix : "21000da" ,
         },
         {
           imgp:neufa,
           nom:"9a" ,
-          caractér: "Ram : 2gb" ,
+          caractér: "caractéristique : Ram : 2gb" ,
+          prix : "22000da" ,
         }
       ]
     },
@@ -29,7 +31,6 @@ export const Mesproduits = [
       buttonText: "Nos Produits Apple",
       produits:[
         {
-
           imgp: huita ,
         },
         {

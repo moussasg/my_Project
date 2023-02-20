@@ -1,26 +1,27 @@
 import React  from 'react'
 import './App.css'
-import Contact from "./pages/contact/contact"
+import Login from "./pages/Login/login"
 import Home from './pages/home/home'
 import { Link,  Route, Routes } from "react-router-dom"
 import Products from "./pages/store/nproducts" // li yafichi les marques
 import Card from "./components/card/index" // yafichi les produits de marque
 import { Mesproduits } from "./constant/toutemarque" // notre cst
 function App() {
+  
   return (  
     <>
-      <nav>
+    <nav class="navbar navbar-dark bg-dark">
         <Link to="/Home">Home</Link>
         <Link to="/Products">Products</Link>
-        <Link to="/Contact">Contact</Link>
+        <Link to="/Login">Login</Link>
+        </nav>
       <Routes>
+      <Route path="/Login" element={<Login/>} />
         <Route path="/Home" element={<Home/>} />
-        <Route path="/Products" element={<Products/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/Products" element={<Products/>}/>{/* les marques*/}
         {/*Card li tafichi les produist meditelha props la cst */}
         <Route path='/Mesproduits/:id' element={<Card props={Mesproduits}/>}/>
       </Routes>
-      </nav>
     </>
   )
 }
