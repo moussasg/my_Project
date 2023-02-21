@@ -4,11 +4,11 @@ import { useParams } from "react-router-dom"; // pour récupérré id de url
 import { Mesproduits } from "../../constant/toutemarque" // notre cst
 function Card() {//Card li tafichi les produist meditelha props : notre cst f app.jsx
   const { id } = useParams(); // useparams pour récupéré paramétre de url , id jebto m cst
-  const product = Mesproduits.find((el) => el.id.toString() === id);
-  // product yjib id de cst 
+  const FindId = Mesproduits.find((el) => el.id.toString() === id);
+  // FindId yjib id de cst 
   return (
     <div> {/*produits jbto m cst c les produits de marque a afiché */}
-        {product.produits.map((el, i) => (
+        {FindId.produits.map((el, i) => (
           <div key={i}> 
           <table className={classes.table}>
           <tr>

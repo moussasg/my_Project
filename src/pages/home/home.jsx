@@ -1,6 +1,6 @@
 import React from 'react'
 import classe from "./index.module.css"
-import Des from "../../assets/des.png"
+import LogoAceuill from "../../assets/logos.jpg"
 import Login from '../Login/login';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <div className={classe.home}>
-    <img src={Des}></img>
+    <img src={LogoAceuill}></img>
     <div className={classe.but}>
  <button type="button" class="btn btn-outline-primary"> <Link to="/Login"> Get Started</Link></button>
     </div>
